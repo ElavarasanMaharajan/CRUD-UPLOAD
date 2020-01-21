@@ -1,0 +1,44 @@
+<%- include layouts/header.ejs %>	
+<div class="container-fluid">  
+	<div class="row">
+	 <div  class="col-xs-12 col-md-6">
+	  <div id="myslider" style="width:612px; height:412px">
+		  <img src="https://picsum.photos/612/612?random=1"/>
+		  <img src="https://picsum.photos/612/612?random=2"/>
+		</div>
+	 </div>
+	 <div  class="col-xs-12 col-md-6">
+			<div>
+					<!-- <table width='80%' border=0>
+
+							<tr style='text-align:left; background-color:#CCC'>
+								<th>Name</th>
+								<th>Age</th>
+								<th>Email</th>
+								<th>Action</th>
+							</tr>
+								Using FOREACH LOOP for the users array
+								
+								myArray.forEach(function(el, index) {
+									// el - current element, i - index
+								});
+							
+				
+						</table> -->
+
+					<!-- <a href="/add">Add New User</a> |  -->
+					<a href="/userlist">USERS</a>
+				</div>	
+	</div>
+	</div>
+</div>
+
+<%- include layouts/footer.ejs %>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+<script>
+  simpleslider.getSlider({
+    container: document.getElementById('myslider'),
+    transitionTime:1,
+    delay:3.5
+  });
+</script> 
